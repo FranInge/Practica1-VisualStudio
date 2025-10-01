@@ -3,11 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi primera aplicacion</title>
+    <title>Mi primera aplicacion</title> //Titulo de la pagina
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    
+    <h1 id="inicio">Inicio</h1>
     <h1>Bienvenido a mi pagina web!!</h1>
     <p>NO PRESIONAR EL BOTON</p>
     <button id="myButton">Boton</button>
@@ -19,6 +21,147 @@
 
     <div>aloooooo
         <iframe width="560" height="315" src="C:\Users\Usuario\OneDrive\Desktop\Imagenes\fear fa.png" title="Imagen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    </div> 
+
+    
+    <h1 id="servicios">Servicios</h1>
+
+    <h2><strong>Sobre</strong> mi</h2>
+    <p><em>Hola me llamo</em> juad</p>
+    <p>A juad le guta jued</p>
+
+    //Texto con negrita, cursiva y abreviatura
+    <p><strong>Practicar</strong> a diario es <em>clave</em> para aprender <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+
+    //Lista no ordenada
+    <ul>Me llamo
+        <li>Juad</li>
+        <li>Jued</li>
+        <li>Juaed</li>
+    </ul>
+    
+    //Lista ordenada
+    <ol>Me gusta
+        <li>Jugar</li>
+        <li>Comer</li>
+        <li>Dormir</li>
+    </ol>
+    
+    //Enlace con target y rel
+    <p>Visita <a href="https://www.example.com" target="_blank" rel="noreferrer">MDN HTML</a> para más información.</p>
+    <P><a href="#contacto">Ir a contacto</a></P> //Enlace que manda al id="contacto" de mas abajo
+    <h1 id="contacto">Contacto</h1>
+
+    //Imagen con alt y title
+    <p></p>
+    <img src="C:\Users\Usuario\OneDrive\Desktop\Imagenes\image.png" alt="" width="500">
+    <p></p>
+
+    <!--mensaje en visual
+    adadadsasasdas
+    -->
+    //Ejemplo con main
+    <main>
+        <section aria-labelledby="news">
+            <h2 id="news">Noticias</h2>
+            <article>
+                <h3>Lanzamiento en curso...</h3>
+                <p>Ya esta disponible el modulo de HTML basico -_-</p>
+            </article>
+            
+            <article>
+                <h3>Proximos modulos</h3>
+                <p>Continuaremos con CSS y maquetacion.</p>
+        </section>
+    </main>
+
+    //Navegacion semantica, lleva a los id de mas arriba
+    <nav>
+        <a href="#inicio">Inicio</a></li>
+        <a href="#servicios">Servicios</a></li>
+        <a href="#contacto">Contacto</a></li>
+    </nav>
+
+    //Tabla con cabecera "Productos" y "Precio", con 3 filas de Ejemplo
+
+    <table>
+        <thead>
+            <tr>
+                <th>Productos</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Producto 1</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Producto 2</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Producto 3</td>
+                <td>$30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    //Crear un formulario de contactos con campos nombre(obligatorio), email(tipo email), mensaje(textarea) y un boton de enviar
+    <form action="#" method="post">
+        <label>Nombre:
+            <input type="text" name="nombre" required>
+        </label>
+        
+        <label for="email">Email:
+            <input type="email" name="email">
+        </label>
+        
+        <label for="message">Mensaje:
+        <textarea name="message" rows="4"></textarea>
+        </label>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p></p>
+    //Un enlace a ./pages/portfolio.html y otro que suba un nivel para ir a ../index.html.
+    <p></p>
+    <a href="./pages/portfolio.html">Ver portafolio</a>
+    <p></p>
+    <a href="C:\Users\Usuario\OneDrive\Desktop\UAX\2do año\Informatica 2\Unidad 1\Practica1-VisualStudio/index.html">Volver al inicio</a>
+
+    <p></p>
+    //Crear una estructura correcta con un solo h1, varios h2 y h3 para subseccciones
+    <p></p>
+    <h1>Mi sitio</h1>
+    <h2>Servicios</h2>
+        <h3>Desarrollo web</h3>
+        <h3>Consultoria</h3>
+    <h2>Contactos</h2>
+
+    <!--
+    //Crear un asside con informacion adicional
+    <aside left>
+        <h2>Información adicional</h2>
+        <p>Este es un sitio de ejemplo para practicar HTML.</p>
+    </aside>
+    -->
+    
+    <p></p>
+
+    //Crear un enlace que contenga una imagen(logo), con alt descriptivo, que lleve a index.html
+    <p></p>
+    <a href="index.html">
+        <img src="C:\Users\Usuario\OneDrive\Desktop\Imagenes\2023_08_20_primis-richtofen-21911727.png" alt="Ir al inicio - Logo de la empresa" width="80">
+    </a>
+
+    <p></p>
+    //Añadir una cita breve con q> y un fragmentoo de codigo en linea con code>
+
+    <p></p>
+    <p>Como dijo frabrizzio una vez: <q>One tap!! KD positivo!</q>.</p>
+    <p>El atributo <code>alt</code> mejora la accebilidad de las imagenes</p>
+
 </body>
 </html>
